@@ -1,36 +1,39 @@
 # AETHER® — Premium Multi-Agency Website Template
 
-A polished, responsive static website starter for creative studios, web agencies, brand consultancies, and digital service businesses.
+A responsive, static HTML/CSS/JavaScript website foundation for creative studios, web agencies, consultants, and service businesses. Built with an editorial dark-and-paper visual system, reusable page patterns, mobile navigation, motion preferences, and a browser-based brand customizer.
 
-## Pages included
+## Included website pages
 
-- `index.html` — homepage and agency overview
-- `services.html` — service offerings and FAQs
-- `work.html` — selected work / portfolio layout
+- `index.html` — agency homepage
+- `services.html` — service offerings
+- `work.html` — portfolio / concept case studies
 - `about.html` — studio story and principles
-- `pricing.html` — project engagement options and FAQs
-- `contact.html` — project enquiry form
-- `styles.css` — shared design system and responsive styles
-- `script.js` — mobile navigation, reveal effects, current year, and email-form behaviour
+- `pricing.html` — engagement models and FAQs
+- `contact.html` — enquiry form demo
+- `niche-starters.html` — eight business/agency directions
+- `customizer.html` — live brand, headline, and colour preview; copyable CSS tokens
+
+## Source and documentation
+
+- `styles.css` — shared styles, layouts, responsive breakpoints, reduced-motion support
+- `script.js` — mobile navigation, reveal effects, year, and contact email draft
+- `CUSTOMIZATION.md` — setup, customisation, and pre-sale quality checklist
+- `LICENSE-DRAFT.txt` — draft license wording; review and adapt before sale
 
 ## Preview locally
 
-No build tools are required. Download or clone the repository, then open `index.html` in a browser. For a more realistic local preview, use a simple local static server.
+No build step or package installation is required. Download or clone the repository and open `index.html` in a browser. A simple local static server is recommended for more realistic testing.
 
-## Before publishing for a real business
+## Before using or selling
 
-1. Replace the AETHER name, logo, copy, links, and imagery with your own brand assets.
-2. Replace all concept portfolio items with genuine work. The current sample projects are illustrative and must not be represented as real client engagements.
-3. In `script.js`, change `hello@example.com` to the real contact email. Update the matching address in `contact.html`.
-4. Check every link, form field, image, page title, description, and mobile layout.
-5. The contact form currently opens the visitor's email application; it does not store or send form data to a server. Connect a trusted form service or backend if you need direct submissions.
-6. Add your own privacy, cookie, accessibility, and legal information where applicable.
-7. Optimise and self-host licensed imagery/fonts if required for your production setup.
-
-## Design direction
-
-Editorial typography, dark ink surfaces, warm paper sections, acid-lime accents, large art direction, responsive project cards, accessible mobile navigation, reduced-motion support, and reusable page patterns.
+1. Replace AETHER branding, copy, links, email, and all placeholder details.
+2. Replace concept projects with genuine work or clearly labelled demonstration concepts.
+3. The contact form opens the visitor's email application; it does not submit to a server or store data. Connect a suitable form service/backend for direct submissions.
+4. Check licences and terms for external imagery and fonts; replace or self-host assets as needed.
+5. Test all pages, links, keyboard use, colour contrast, and mobile layouts in current browsers.
+6. Add accurate privacy/legal information and configure any real analytics or form integrations transparently.
+7. Review `LICENSE-DRAFT.txt` with appropriate legal guidance and define exactly what the customer may use, modify, and redistribute.
 
 ## Important
 
-This is an initial template foundation, not a promise of sales, rankings, or business results. Test it across current browsers and devices and complete your own quality, licensing, accessibility, and security checks before selling or using it commercially.
+This is a website template foundation, not a guarantee of sales, rankings, conversions, or a particular resale value. The niche gallery gives creative starting directions; it is not eight separate completed websites. Finish content, licensing, testing, documentation, and storefront assets before describing the product as production-ready.
