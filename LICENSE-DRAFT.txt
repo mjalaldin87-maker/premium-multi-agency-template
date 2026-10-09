@@ -1,0 +1,21 @@
+AETHER® TEMPLATE — SAMPLE COMMERCIAL LICENSE
+
+This file is a draft license template and should be reviewed and adapted before the product is sold. It is not legal advice.
+
+1. License grant
+After a valid purchase, the seller may grant the buyer a non-exclusive license to modify the template and use it in one end product for the buyer or one client, subject to the terms shown at checkout.
+
+2. Restrictions
+Unless a separate written license says otherwise, the buyer may not resell, redistribute, sublicense, publish, or share the template source files as a standalone product or as a competing template. The buyer may not claim the original template as entirely their own work.
+
+3. Third-party assets
+Fonts, photographs, icons, and other third-party assets may have separate terms and are not automatically covered by this template license. The buyer must verify and follow those terms and replace any asset they cannot lawfully use.
+
+4. No warranty of business results
+The template is provided as a design and code resource. No guarantee is made about revenue, leads, rankings, conversion rates, compatibility with every environment, or fitness for a particular purpose.
+
+5. Seller's responsibilities
+Before sale, the seller should clearly define permitted projects, client-work rights, update/support terms, refund policy, and whether extended or unlimited licenses are available.
+
+6. Governing law
+The seller should add appropriate governing-law and consumer-rights terms before publishing this license for customers.
