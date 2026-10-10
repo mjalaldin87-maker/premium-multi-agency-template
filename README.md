@@ -1,5 +1,7 @@
 # Your Brand — Multi-Purpose Agency Website Template
 
+> **Pre-sale security note:** This repository is currently public. Anyone can view and download the source files from GitHub, so this repository must be treated as a public demo—not as protected paid-product delivery. Before selling, keep the full customer ZIP in a private source/release location and publish only a demo-only copy here. Do not assume a paid ZIP is protected while its complete source remains in this public repository.
+
 A static HTML/CSS/JavaScript starter for creative studios, agencies, consultants, and service businesses. It has no build step and uses CSS/SVG artwork rather than stock photos.
 
 ## Pages included
@@ -32,6 +34,7 @@ A static HTML/CSS/JavaScript starter for creative studios, agencies, consultants
 4. Use a local static server for more realistic form, route, and browser testing.
 
 ## Before publishing
+1. **Protect the paid source first:** this public demo repository exposes its current source files. Separate the complete paid package from the public demo before launch.
 1. Replace every `Your Brand` placeholder and all `[FILL IN]` prompts.
 2. Replace demo concepts with approved work or keep them clearly labelled.
 3. Replace `YOUR_FORM_ID` in `contact.html`, configure the redirect with Formspree, and test a real submission.
