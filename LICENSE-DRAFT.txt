@@ -11,7 +11,7 @@ After a valid purchase, the buyer may modify the template and use it for their o
 The buyer may not resell, redistribute, sublicense, publish, or share the template source files as a standalone product or as a competing template. The buyer may not claim the original template files were created entirely by the buyer.
 
 3. Third-party assets
-Third-party fonts, code, and assets remain subject to their own licences. Do not use assets without permission. Font files are not currently bundled in this release.
+Third-party fonts, code, and assets remain subject to their own licences. Do not use assets without permission. The bundled Bricolage Grotesque and Instrument Sans fonts are licensed under SIL Open Font License 1.1; keep the included notices in /fonts when redistributing the template.
 
 4. No guarantee of results
 This template is supplied as a design and code resource. No promise is made about income, sales, leads, search rankings, conversions, compatibility with every system, or suitability for a particular purpose.
