@@ -1,0 +1,15 @@
+YOUR BRAND — START HERE
+
+Get the template running in three steps.
+
+1. OPEN
+Download the repository ZIP and extract it. Open index.html in a modern browser. No build tools or package installation are required.
+
+2. PREVIEW AND CUSTOMIZE
+Open customizer.html and try the four brand styles. Search the files for "Your Brand" and replace it with your business name. Replace all [FILL IN] prompts and demo concept content before publishing.
+
+3. TEST AND PUBLISH
+Set up your own Formspree form ID in contact.html, replace the placeholder domain, then test the form and thank-you redirect. Check all pages on desktop and mobile before deploying.
+
+IMPORTANT
+The form is not ready to receive enquiries until you configure Formspree. Font binaries are not bundled yet; system fallbacks are used. The licence, privacy notice, terms, refund policy, and support policy must be reviewed and completed before sale.
