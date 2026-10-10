@@ -14,20 +14,15 @@
       nav.classList.remove('is-open');
     }));
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 700) {
+      if (window.innerWidth > 760) {
         toggle.setAttribute('aria-expanded', 'false');
         nav.classList.remove('is-open');
       }
     });
   }
-
-  document.querySelectorAll('[data-year]').forEach(node => {
-    node.textContent = new Date().getFullYear();
-  });
-
-  const revealTargets = document.querySelectorAll('.service-row, .project-card, .process-grid article, .feature-card, .work-item, .price-card');
-  revealTargets.forEach(node => node.classList.add('reveal'));
-  if ('IntersectionObserver' in window) {
+  document.querySelectorAll('[data-year]').forEach(node => { node.textContent = new Date().getFullYear(); });
+  const revealTargets = document.querySelectorAll('.service-row, .project-card, .feature-card, .work-item, .price-card');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -40,22 +35,16 @@
   } else {
     revealTargets.forEach(node => node.classList.add('is-visible'));
   }
-
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     contactForm.addEventListener('submit', event => {
-      event.preventDefault();
-      const form = new FormData(contactForm);
-      const name = String(form.get('name') || '').trim();
-      const email = String(form.get('email') || '').trim();
-      const project = String(form.get('project') || '').trim();
-      const budget = String(form.get('budget') || 'Not specified').trim();
-      const message = String(form.get('message') || '').trim();
-      const subject = encodeURIComponent('Project enquiry — ' + (name || 'Website visitor'));
-      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nProject: ' + project + '\nBudget: ' + budget + '\n\n' + message);
+      if (!contactForm.checkValidity()) {
+        event.preventDefault();
+        contactForm.reportValidity();
+        return;
+      }
       const status = contactForm.querySelector('.form-status');
-      if (status) status.textContent = 'Opening your email app to send this enquiry…';
-      window.location.href = 'mailto:hello@example.com?subject=' + subject + '&body=' + body;
+      if (status) status.textContent = 'Sending your enquiry…';
     });
   }
 })();
