@@ -1,15 +1,15 @@
-YOUR BRAND — START HERE
+PREMIUM MULTI-AGENCY WEBSITE TEMPLATE — START HERE
 
 Get the template running in three steps.
 
 1. OPEN
-Download the repository ZIP and extract it. Open index.html in a modern browser. No build tools or package installation are required.
+Download and extract the ZIP. Open index.html in a modern browser. No build tools or package installation are required.
 
 2. PREVIEW AND CUSTOMIZE
-Open customizer.html and try the four brand styles. Search the files for "Your Brand" and replace it with your business name. Replace all [FILL IN] prompts and demo concept content before publishing.
+Open customizer.html and try the four brand styles. Replace "Your Brand" with your business name. Replace the sample copy and every [FILL IN] prompt with accurate information before publishing.
 
 3. TEST AND PUBLISH
-Set up your own Formspree form ID in contact.html, replace the placeholder domain, then test the form and thank-you redirect. Check all pages on desktop and mobile before deploying.
+Configure your own Formspree form ID in contact.html, replace the placeholder domain and contact details, and test a real submission and the thank-you redirect. Check every page on desktop and mobile before deploying.
 
 IMPORTANT
-The form is not ready to receive enquiries until you configure Formspree. Two fonts are included locally with their licence notices. The licence, privacy notice, terms, refund policy, and support policy must be reviewed and completed before sale.
+The contact form intentionally blocks submission while the YOUR_FORM_ID placeholder is present, instead of pretending to send an enquiry. It will not receive enquiries until you connect your own form provider. Never include your private form ID or API secret in a public template. Two fonts are bundled locally with their SIL Open Font License notices. The licence, privacy notice, terms, refund policy, and support policy are starter material: review and complete them for your own circumstances before publishing or selling a customized site.
