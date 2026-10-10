@@ -18,6 +18,8 @@
   font-family: var(--body-font);
 }
 html[data-brand="rose"] {
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: "Trebuchet MS", "Segoe UI", sans-serif;
   --brand: #FF5FA2;
   --brand-strong: #38162B;
   --brand-soft: #F8C9DD;
@@ -32,6 +34,8 @@ html[data-brand="rose"] {
   --brand-mood: "expressive";
 }
 html[data-brand="forest"] {
+  --heading-font: "Palatino Linotype", Palatino, Georgia, serif;
+  --body-font: "Segoe UI", Arial, sans-serif;
   --brand: #426B55;
   --brand-strong: #172D25;
   --brand-soft: #C5D9C8;
@@ -46,6 +50,8 @@ html[data-brand="forest"] {
   --brand-mood: "grounded";
 }
 html[data-brand="mono"] {
+  --heading-font: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body-font: Arial, Helvetica, sans-serif;
   --brand: #0B1033;
   --brand-strong: #080A16;
   --brand-soft: #D8D9E0;
