@@ -3,13 +3,22 @@ PREMIUM MULTI-AGENCY WEBSITE TEMPLATE — START HERE
 Get the template running in three steps.
 
 1. OPEN
-Download and extract the ZIP. Open index.html in a modern browser. No build tools or package installation are required.
+Extract the ZIP and open index.html in a modern browser. No build tools or package installation are required.
 
 2. PREVIEW AND CUSTOMIZE
-Open customizer.html and try the four brand styles. Replace "Your Brand" with your business name. Replace the sample copy and every [FILL IN] prompt with accurate information before publishing.
+Open customizer.html to preview the four brand styles. Replace "Your Brand" with your business name. Replace sample copy and every [FILL IN] prompt with accurate information before publishing.
 
 3. TEST AND PUBLISH
-Configure your own Formspree form ID in contact.html, replace the placeholder domain and contact details, and test a real submission and the thank-you redirect. Check every page on desktop and mobile before deploying.
+In contact.html, replace YOUR_FORM_ID with your own Formspree form ID. Update the redirect to your real domain and thank-you.html. Submit a real test enquiry and confirm it arrives. Check every page on desktop and mobile before deploying.
 
 IMPORTANT
-The contact form intentionally blocks submission while the YOUR_FORM_ID placeholder is present, instead of pretending to send an enquiry. It will not receive enquiries until you connect your own form provider. Never include your private form ID or API secret in a public template. Two fonts are bundled locally with their SIL Open Font License notices. The licence, privacy notice, terms, refund policy, and support policy are starter material: review and complete them for your own circumstances before publishing or selling a customized site.
+The contact form intentionally blocks submission while YOUR_FORM_ID is still present. It will not receive enquiries until you connect your own form provider. Never include private API secrets in a public template.
+
+LICENCE AND POLICY PAGES
+LICENSE.txt explains the template-use licence. The privacy.html and terms.html pages are starter templates, not legal advice or ready-made legal policies. Edit them to accurately reflect your own business, data practices, services, and applicable law before publishing. The product seller's checkout, refund, and support terms are separate from the policies you create for your own website.
+
+FONTS
+The fonts folder includes Bricolage Grotesque and Instrument Sans with SIL Open Font License 1.1 notices. Keep those notices with the font files.
+
+FINAL CHECK
+Search all files for [FILL IN], YOUR_FORM_ID, yourdomain.com, and sample business details. Replace each relevant placeholder, test every page and link, and confirm the site works at mobile and desktop sizes before launch.
