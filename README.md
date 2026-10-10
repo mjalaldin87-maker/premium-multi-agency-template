@@ -40,7 +40,7 @@ A static HTML/CSS/JavaScript starter for creative studios, agencies, consultants
 6. Test all pages, keyboard navigation, mobile layouts, links, and contrast before sale.
 
 ## Known limitations
-- Bricolage Grotesque and Instrument Sans font files are **not yet bundled**. Current styles use system font fallbacks; no remote font request is required.
+- Bricolage Grotesque and Instrument Sans variable font files are bundled locally with their SIL Open Font License notices. No remote font request is required.
 - The Formspree form ID is a placeholder and will not submit successfully until configured.
 - SEO metadata and placeholder domain values require final replacement and audit.
 - A Lighthouse score of 95+ is a target, not a verified result.
