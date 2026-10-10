@@ -25,44 +25,6 @@
     node.textContent = new Date().getFullYear();
   });
 
-  const brandButtons = [...document.querySelectorAll('[data-brand-choice]')];
-  const brandStatus = document.querySelector('.switcher-status');
-  const brandNames = {
-    ultramarine: 'Studio',
-    rose: 'Culture',
-    forest: 'Grounded',
-    mono: 'Essential'
-  };
-  const applyBrand = (brand, shouldRemember) => {
-    if (!Object.prototype.hasOwnProperty.call(brandNames, brand)) return;
-    document.documentElement.setAttribute('data-brand', brand);
-    brandButtons.forEach(button => {
-      button.setAttribute('aria-pressed', String(button.dataset.brandChoice === brand));
-    });
-    if (brandStatus) brandStatus.textContent = brandNames[brand] + ' style selected. Choose a style to preview the site.';
-    if (shouldRemember) {
-      try {
-        window.localStorage.setItem('your-brand-style', brand);
-      } catch (error) {
-        /* Storage may be blocked; the switcher still works for this visit. */
-      }
-    }
-  };
-
-  if (brandButtons.length) {
-    let savedBrand = 'ultramarine';
-    try {
-      const storedBrand = window.localStorage.getItem('your-brand-style');
-      if (storedBrand && Object.prototype.hasOwnProperty.call(brandNames, storedBrand)) savedBrand = storedBrand;
-    } catch (error) {
-      /* Storage may be blocked; use the default style. */
-    }
-    applyBrand(savedBrand, false);
-    brandButtons.forEach(button => {
-      button.addEventListener('click', () => applyBrand(button.dataset.brandChoice, true));
-    });
-  }
-
   const revealTargets = document.querySelectorAll('.service-row, .project-card, .process-grid article, .feature-card, .work-item, .price-card');
   revealTargets.forEach(node => node.classList.add('reveal'));
   if ('IntersectionObserver' in window) {
@@ -82,13 +44,18 @@
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const form = new FormData(contactForm);
+      const name = String(form.get('name') || '').trim();
+      const email = String(form.get('email') || '').trim();
+      const project = String(form.get('project') || '').trim();
+      const budget = String(form.get('budget') || 'Not specified').trim();
+      const message = String(form.get('message') || '').trim();
+      const subject = encodeURIComponent('Project enquiry — ' + (name || 'Website visitor'));
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nProject: ' + project + '\nBudget: ' + budget + '\n\n' + message);
       const status = contactForm.querySelector('.form-status');
-      if (!contactForm.checkValidity()) {
-        event.preventDefault();
-        contactForm.reportValidity();
-        return;
-      }
-      if (status) status.textContent = 'Sending your message…';
+      if (status) status.textContent = 'Opening your email app to send this enquiry…';
+      window.location.href = 'mailto:hello@example.com?subject=' + subject + '&body=' + body;
     });
   }
 })();
