@@ -16,7 +16,6 @@ Includes a four-style live brand preview, reusable page layouts, and CSS/SVG art
 ## What you do not get
 - Hosting, a domain, or a custom email address
 - A configured Formspree account or working form ID
-- Bundled Bricolage Grotesque or Instrument Sans font files
 - Custom business copy, real portfolio projects, team photos, or professional legal advice
 - Guaranteed sales, leads, rankings, revenue, or performance scores
 
@@ -26,7 +25,7 @@ Includes a four-style live brand preview, reusable page layouts, and CSS/SVG art
 3. **Does the contact form work immediately?** No. You must configure your own Formspree form ID and test the redirect.
 4. **Can I use it for client projects?** The intended licence allows personal and client projects after purchase, subject to the completed final licence.
 5. **Are all pages ready to publish as-is?** No. Replace placeholders, sample concepts, contact details, domain values, and legal text first.
-6. **Are fonts and hosting included?** No. Font binaries are not bundled, and hosting/domain costs are separate.
+6. **Are fonts and hosting included?** Two fonts are included locally with their licence notices. Hosting and domain costs are separate.
 
 ## Refund policy
 [FILL IN] State the refund window, eligibility, procedure, and any digital-product exceptions that lawfully apply. Make this policy visible before checkout and have it reviewed for the markets where you sell.
