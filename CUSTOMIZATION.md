@@ -12,7 +12,7 @@ Search for the exact phrase `Your Brand` and replace it with your chosen busines
 Edit CSS variables near the top of `design-system.css`. Main variables include `--brand`, `--brand-strong`, `--brand-soft`, `--accent`, `--paper`, `--ink`, and `--muted`. Four data-attribute themes are included: `ultramarine`, `rose`, `forest`, and `mono`. The live switcher previews CSS variables; it does not edit source files or publish the site.
 
 ## Typography
-The design declares font variables and uses safe system fallbacks. The requested self-hosted Bricolage Grotesque and Instrument Sans font binaries and licence files are not bundled yet. Add the official font files and their licence notices in `/fonts`, define `@font-face` rules with `font-display: swap`, then verify attribution and file sizes before sale.
+The template includes self-hosted Bricolage Grotesque for headings and Instrument Sans for body text in `/fonts`, with matching SIL Open Font License 1.1 notices. Local `@font-face` rules use `font-display: swap`, so no external font service is required. Keep the licence files when redistributing the template.
 
 ## Contact form
 In `contact.html`, replace `YOUR_FORM_ID` in the Formspree action with your own form ID. Update the hidden `_next` value or the provider redirect settings to your real domain and `thank-you.html`. Confirm that your Formspree plan and configuration support the desired redirect. Submit a test enquiry and verify the message arrives. The form uses native browser validation; it does not store messages locally.
