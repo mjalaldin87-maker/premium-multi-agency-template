@@ -20,7 +20,11 @@
       }
     });
   }
-  document.querySelectorAll('[data-year]').forEach(node => { node.textContent = new Date().getFullYear(); });
+
+  document.querySelectorAll('[data-year]').forEach(node => {
+    node.textContent = new Date().getFullYear();
+  });
+
   const revealTargets = document.querySelectorAll('.service-row, .project-card, .feature-card, .work-item, .price-card');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => {
@@ -35,6 +39,7 @@
   } else {
     revealTargets.forEach(node => node.classList.add('is-visible'));
   }
+
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     contactForm.addEventListener('submit', event => {
@@ -43,8 +48,24 @@
         contactForm.reportValidity();
         return;
       }
+
       const status = contactForm.querySelector('.form-status');
-      if (status) status.textContent = 'Sending your enquiry…';
+      const action = contactForm.getAttribute('action') || '';
+      const isPlaceholder = /formspree\.io\/f\/YOUR_FORM_ID(?:$|[?#])/i.test(action);
+
+      if (isPlaceholder) {
+        event.preventDefault();
+        if (status) {
+          status.textContent = 'This demo form is not connected yet. Replace YOUR_FORM_ID with your own Formspree form ID before publishing.';
+          status.setAttribute('role', 'alert');
+        }
+        return;
+      }
+
+      if (status) {
+        status.textContent = 'Sending your enquiry…';
+        status.removeAttribute('role');
+      }
     });
   }
 })();
