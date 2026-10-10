@@ -1,17 +1,19 @@
 # Asset and Font Licence Notes
 
 ## Artwork
-The homepage and portfolio illustrations are made with CSS shapes and inline SVG. No stock photographs or third-party image files are included in the current HTML pages.
+The homepage and portfolio illustrations use CSS shapes and inline SVG. No stock photographs are included.
 
-## Planned fonts — not bundled yet
-- **Bricolage Grotesque** — planned heading font. Google Fonts lists this family under the SIL Open Font License (OFL). Before bundling, record the exact upstream file, version/commit, and licence text.
-- **Instrument Sans** — planned body font. Google Fonts lists this family under the SIL Open Font License (OFL). Before bundling, record the exact upstream file, version/commit, and licence text.
+## Self-hosted fonts
+Both variable TrueType fonts are included in `/fonts`, together with their SIL Open Font License 1.1 notices. The OFL allows bundling and redistribution with this template, but the fonts may not be sold by themselves and the licence notices must remain with distributed copies.
 
-The current release uses system font fallbacks and does not make remote font requests. The font families above are planned, not currently included. Do not advertise them as bundled until the font files and licence notices are present in /fonts.
+- **Bricolage Grotesque** — heading font: `fonts/BricolageGrotesque[opsz,wdth,wght].ttf`. Google Fonts path: `ofl/bricolagegrotesque/`. Upstream source commit recorded in Google Fonts metadata: `84745e5b96261ae5f8c6c856e262fe78d1d6efdd`. Licence: SIL Open Font License 1.1; copyright Bricolage Grotesque Project Authors.
+- **Instrument Sans** — body font: `fonts/InstrumentSans[wdth,wght].ttf`. Google Fonts path: `ofl/instrumentsans/`. Upstream source commit recorded in Google Fonts metadata: `7fa22308a3d0c94ee2b3cd537a1196b65db34a3e`. Licence: SIL Open Font License 1.1; copyright Instrument Sans Project Authors.
+
+`design-system.css` loads both fonts locally with `@font-face` and `font-display: swap`. No remote font service is required. Re-check the licence if replacing or modifying either font.
 
 ## Release check
-- [ ] Add official font binaries and corresponding OFL licence files.
-- [ ] Add local @font-face rules with font-display: swap.
-- [ ] Record exact source/version details.
-- [ ] Verify that all distributed files may be redistributed under their licences.
-- [ ] List any asset larger than 150 KB.
+- [x] Font binaries included.
+- [x] Matching OFL licence notices included.
+- [x] Local `@font-face` rules use `font-display: swap`.
+- [x] Upstream source details recorded.
+- [ ] Browser and final ZIP checks still required.
