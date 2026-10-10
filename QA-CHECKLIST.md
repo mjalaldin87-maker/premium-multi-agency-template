@@ -35,8 +35,9 @@ Do these checks before selling or publishing. A checkmark should mean the test w
 - [ ] Check canonical URLs and social metadata.
 - [ ] Run Lighthouse on mobile and desktop; record actual results rather than promising a score.
 - [ ] Check browser console for errors and network panel for unexpected external requests.
-- [ ] List and inspect any asset larger than 150 KB.
-- [ ] Confirm font and code licences; add font files and notices if applicable.
+- [ ] Inspect assets larger than 150 KB. The two bundled variable font files are intentionally larger than this threshold; no stock image assets are included.
+- [x] Confirm local font files and their OFL notices are present in `/fonts`; check `docs/ASSET-LICENCES.md`.
+- [ ] Confirm the final downloaded ZIP contains both font files and notices and renders them correctly in a browser.
 - [ ] Review licence, privacy, terms, refund, and support policies.
 - [ ] Create a clean release ZIP and test the extracted copy.
 - [ ] Keep paid source private before selling; use a separate demo copy if you need a public preview.
