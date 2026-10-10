@@ -1,39 +1,47 @@
-# AETHER® — Premium Multi-Agency Website Template
+# Your Brand — Multi-Purpose Agency Website Template
 
-A responsive, static HTML/CSS/JavaScript website foundation for creative studios, web agencies, consultants, and service businesses. Built with an editorial dark-and-paper visual system, reusable page patterns, mobile navigation, motion preferences, and a browser-based brand customizer.
+A static HTML/CSS/JavaScript starter for creative studios, agencies, consultants, and service businesses. It has no build step and uses CSS/SVG artwork rather than stock photos.
 
-## Included website pages
+## Pages included
+- `index.html` — homepage with four-style live brand switcher
+- `services.html` — service offering layout
+- `work.html` — portfolio layouts; samples are marked demo concepts
+- `case-study.html` — case-study framework
+- `about.html` — business and team introduction
+- `pricing.html` — pricing/package framework with prompts
+- `contact.html` — validated form with a Formspree placeholder
+- `thank-you.html` — post-submission confirmation page
+- `customizer.html` — brand style preview and CSS token helper
+- `niche-starters.html` — eight service-business directions
+- `docs.html` — setup documentation
+- `changelog.html` — release notes starter
+- `license.html`, `privacy.html`, `terms.html` — policy/licence starters that need review
+- `404.html` — not-found page
 
-- `index.html` — agency homepage
-- `services.html` — service offerings
-- `work.html` — portfolio / concept case studies
-- `about.html` — studio story and principles
-- `pricing.html` — engagement models and FAQs
-- `contact.html` — enquiry form demo
-- `niche-starters.html` — eight business/agency directions
-- `customizer.html` — live brand, headline, and colour preview; copyable CSS tokens
+## Key files
+- `design-system.css` — brand variables, homepage layout, switcher themes
+- `product-pages.css` — shared secondary-page layout and responsive rules
+- `brand-switcher.js` — accessible style switcher and guarded localStorage
+- `script.js` — mobile navigation, current year, and form validation
+- `START-HERE.txt`, `CUSTOMIZATION.md`, `LISTING.md`, `LICENSE.txt`, `QA-CHECKLIST.md`
 
-## Source and documentation
+## Run locally
+1. Download and extract the repository ZIP.
+2. Open `index.html` in a modern browser.
+3. Open `customizer.html` to try the style presets.
+4. Use a local static server for more realistic form, route, and browser testing.
 
-- `styles.css` — shared styles, layouts, responsive breakpoints, reduced-motion support
-- `script.js` — mobile navigation, reveal effects, year, and contact email draft
-- `CUSTOMIZATION.md` — setup, customisation, and pre-sale quality checklist
-- `LICENSE-DRAFT.txt` — draft license wording; review and adapt before sale
+## Before publishing
+1. Replace every `Your Brand` placeholder and all `[FILL IN]` prompts.
+2. Replace demo concepts with approved work or keep them clearly labelled.
+3. Replace `YOUR_FORM_ID` in `contact.html`, configure the redirect with Formspree, and test a real submission.
+4. Replace `https://yourdomain.com` in canonical tags, sitemap, robots, Open Graph URLs, and the form redirect.
+5. Review the licence, privacy notice, terms, refund policy, and support policy with appropriate professional advice.
+6. Test all pages, keyboard navigation, mobile layouts, links, and contrast before sale.
 
-## Preview locally
-
-No build step or package installation is required. Download or clone the repository and open `index.html` in a browser. A simple local static server is recommended for more realistic testing.
-
-## Before using or selling
-
-1. Replace AETHER branding, copy, links, email, and all placeholder details.
-2. Replace concept projects with genuine work or clearly labelled demonstration concepts.
-3. The contact form opens the visitor's email application; it does not submit to a server or store data. Connect a suitable form service/backend for direct submissions.
-4. Check licences and terms for external imagery and fonts; replace or self-host assets as needed.
-5. Test all pages, links, keyboard use, colour contrast, and mobile layouts in current browsers.
-6. Add accurate privacy/legal information and configure any real analytics or form integrations transparently.
-7. Review `LICENSE-DRAFT.txt` with appropriate legal guidance and define exactly what the customer may use, modify, and redistribute.
-
-## Important
-
-This is a website template foundation, not a guarantee of sales, rankings, conversions, or a particular resale value. The niche gallery gives creative starting directions; it is not eight separate completed websites. Finish content, licensing, testing, documentation, and storefront assets before describing the product as production-ready.
+## Known limitations
+- Bricolage Grotesque and Instrument Sans font files are **not yet bundled**. Current styles use system font fallbacks; no remote font request is required.
+- The Formspree form ID is a placeholder and will not submit successfully until configured.
+- SEO metadata and placeholder domain values require final replacement and audit.
+- A Lighthouse score of 95+ is a target, not a verified result.
+- This template has not yet passed a complete manual cross-browser/device test.
